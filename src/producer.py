@@ -18,5 +18,3 @@ while user_input != "q":
     producer.send(TOPIC, {"input": user_input})
     if user_input == 'q':
         break
-    else:
-        producer.flush()
