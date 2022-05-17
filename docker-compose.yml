@@ -1,4 +1,4 @@
-version: '2'
+version: '3.6'
 services:
   kafka: 
     image: spotify/kafka:latest
@@ -8,3 +8,12 @@ services:
     environment:
       ADVERTISED_HOST: 127.0.0.1
       ADVERTISED_PORT: 9092
+  
+  # kafka-manager:
+  #   image: hlebalbau/kafka-manager:stable
+  #   depends_on:
+  #     - kafka
+  #   ports:
+  #     - 9000:9000
+  #   environment:
+  #     APPLICATION_SECRET: "samora"
