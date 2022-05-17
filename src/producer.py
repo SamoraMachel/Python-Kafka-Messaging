@@ -15,11 +15,7 @@ partition = 0
 
 while user_input != "q":
     user_input : str = input("Enter a message : ")
-    if user_input.capitalize()[0] < 'N':
-        partition = 0
-    else:
-        partition = 1
-    producer.send(TOPIC, {"input": user_input}, partition=partition)
+    producer.send(TOPIC, {"input": user_input})
     if user_input == 'q':
         break
     else:

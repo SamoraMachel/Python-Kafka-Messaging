@@ -17,7 +17,7 @@ consumer = KafkaConsumer(
     TOPIC, 
     value_deserializer=lambda x : json.loads(x),
     auto_offset_reset='earliest',
-    group_id = "android"
+    group_id = "android",
 )
 for msg in consumer:
     print(f"""
