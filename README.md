@@ -4,6 +4,7 @@ A sample project for message passing with kafka
 ## Requirements
 In order to run this project you are required to have the following softwares installed
  - docker-compose
+ - docker
  - python 3
 
 ## Project Execution 
