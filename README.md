@@ -3,7 +3,7 @@ A sample project for message passing with kafka
 
 ## Requirements
 In order to run this project you are required to have the following softwares installed
- - docker
+ - docker-compose
  - python 3
 
 ## Project Execution 
@@ -12,7 +12,7 @@ First you'll have to start the kafka server using
 docker-compose up 
 ```
 
-Once the kafka server is up the you can open 2 separate terminals. First install the necessary requirements using 
+Once the kafka server is up then you can open 2 separate terminals. First install the necessary requirements using 
 ```bash
 pip install -r requirements.txt
 ```
